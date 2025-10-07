@@ -1,0 +1,60 @@
+{"level":"info","message":"API Gateway is runnig on port 3000","service":"identity-service","timestamp":"2025-10-06T11:12:40.078Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"identity-service","timestamp":"2025-10-06T11:12:40.084Z"}
+{"level":"info","message":"Redis url is running on port redis://localhost:6379","service":"identity-service","timestamp":"2025-10-06T11:12:40.085Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:14:05.229Z"}
+{"level":"info","message":"Request body: {\"username\":\"Jeremy Doku\",\"email\":\"Doku@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:14:05.230Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-10-06T11:14:05.257Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:14:30.059Z"}
+{"level":"info","message":"Request body: {\"username\":\"Jeremy Doku\",\"email\":\"doku@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:14:30.060Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-10-06T11:14:30.065Z"}
+{"level":"info","message":"API Gateway is runnig on port 3000","service":"identity-service","timestamp":"2025-10-06T11:17:04.918Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"identity-service","timestamp":"2025-10-06T11:17:04.926Z"}
+{"level":"info","message":"Redis url is running on port redis://localhost:6379","service":"identity-service","timestamp":"2025-10-06T11:17:04.926Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:17:20.173Z"}
+{"level":"info","message":"Request body: {\"username\":\"Jeremy Doku\",\"email\":\"doku@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:17:20.174Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-10-06T11:17:20.188Z"}
+{"level":"info","message":"API Gateway is runnig on port 3000","service":"identity-service","timestamp":"2025-10-06T11:19:44.644Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"identity-service","timestamp":"2025-10-06T11:19:44.651Z"}
+{"level":"info","message":"Redis url is running on port redis://localhost:6379","service":"identity-service","timestamp":"2025-10-06T11:19:44.652Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:21:05.361Z"}
+{"level":"info","message":"Request body: {\"username\":\"Jeremy Doku\",\"email\":\"doku@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:21:05.362Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-10-06T11:21:05.376Z"}
+{"level":"info","message":"API Gateway is runnig on port 3000","service":"identity-service","timestamp":"2025-10-06T11:24:19.033Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"identity-service","timestamp":"2025-10-06T11:24:19.040Z"}
+{"level":"info","message":"Redis url is running on port redis://localhost:6379","service":"identity-service","timestamp":"2025-10-06T11:24:19.041Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:24:23.545Z"}
+{"level":"info","message":"Request body: {\"username\":\"Jeremy Doku\",\"email\":\"doku@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:24:23.546Z"}
+{"level":"error","message":"Proxy error: ","service":"identity-service","timestamp":"2025-10-06T11:24:23.563Z"}
+{"level":"info","message":"API Gateway is runnig on port 3000","service":"identity-service","timestamp":"2025-10-06T11:26:31.201Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"identity-service","timestamp":"2025-10-06T11:26:31.208Z"}
+{"level":"info","message":"Redis url is running on port redis://localhost:6379","service":"identity-service","timestamp":"2025-10-06T11:26:31.210Z"}
+{"level":"info","message":"API Gateway is runnig on port 3000","service":"identity-service","timestamp":"2025-10-06T11:27:35.199Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"identity-service","timestamp":"2025-10-06T11:27:35.206Z"}
+{"level":"info","message":"Redis url is running on port redis://localhost:6379","service":"identity-service","timestamp":"2025-10-06T11:27:35.207Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:27:40.059Z"}
+{"level":"info","message":"Request body: {\"username\":\"Jeremy Doku\",\"email\":\"doku@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:27:40.060Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-06T11:27:40.609Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:31:39.978Z"}
+{"level":"info","message":"Request body: {\"username\":\"Jeremy Doku\",\"email\":\"doku@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:31:39.979Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-06T11:31:40.134Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"identity-service","timestamp":"2025-10-06T11:32:04.541Z"}
+{"level":"info","message":"Request body: {\"username\":\"Erling Haaland\",\"email\":\"erling@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-06T11:32:04.542Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-06T11:32:05.100Z"}
+{"level":"info","message":"API Gateway is runnig on port 3000","service":"identity-service","timestamp":"2025-10-07T05:53:52.849Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"identity-service","timestamp":"2025-10-07T05:53:52.856Z"}
+{"level":"info","message":"Redis url is running on port redis://localhost:6379","service":"identity-service","timestamp":"2025-10-07T05:53:52.857Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"identity-service","timestamp":"2025-10-07T05:55:02.970Z"}
+{"level":"info","message":"Request body: {\"email\":\"erling@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-07T05:55:02.972Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-07T05:55:03.084Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"identity-service","timestamp":"2025-10-07T05:57:07.910Z"}
+{"level":"info","message":"Request body: {\"email\":\"erling@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-07T05:57:07.912Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-07T05:57:07.968Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"identity-service","timestamp":"2025-10-07T05:57:36.494Z"}
+{"level":"info","message":"Request body: {\"email\":\"erling@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-07T05:57:36.496Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-07T05:57:36.517Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"identity-service","timestamp":"2025-10-07T06:03:43.557Z"}
+{"level":"info","message":"Request body: {\"email\":\"erling@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-07T06:03:43.558Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-07T06:03:43.646Z"}
+{"level":"info","message":"Received POST request to /v1/auth/login","service":"identity-service","timestamp":"2025-10-07T06:05:46.057Z"}
+{"level":"info","message":"Request body: {\"email\":\"erling@123.com\",\"password\":\"12345678\"}","service":"identity-service","timestamp":"2025-10-07T06:05:46.058Z"}
+{"level":"info","message":"Response received from Identity service: undefined","service":"identity-service","timestamp":"2025-10-07T06:05:46.536Z"}
