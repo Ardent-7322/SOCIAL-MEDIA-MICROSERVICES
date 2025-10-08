@@ -84,6 +84,10 @@ app.listen(PORT, () => {
   logger.info(`Redis url is running on port ${process.env.REDIS_URL}`);
 });
 
+//setting up proxy for our post service
+
+
+
 //NOTE--->
 // api-gateway -> /v1/auth/register ->3000
 // identity -> /api/auth/register ->3001
