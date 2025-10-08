@@ -1,0 +1,42 @@
+{"level":"info","message":"Identity service running on port 3002","service":"identity-service","timestamp":"2025-10-08T05:42:51.999Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T05:42:53.749Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T05:43:32.643Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T05:43:33.733Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T05:57:20.888Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T05:57:22.164Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T05:57:36.559Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T05:57:37.483Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T05:57:42.603Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T05:57:43.538Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T05:58:10.129Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T05:58:11.122Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T05:58:38.302Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T05:58:39.545Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:00:35.184Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:00:36.714Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:01:30.974Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:01:33.116Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:01:58.557Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:01:59.701Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:03:15.381Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:03:17.141Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:05:07.794Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:05:08.922Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:08:02.509Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:08:04.428Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:23:19.900Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:23:21.263Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:23:50.768Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:23:51.896Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:23:59.860Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:24:00.882Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:24:27.938Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:24:29.583Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:27:09.864Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:27:11.209Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:27:15.603Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:27:16.423Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:27:51.896Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:27:52.842Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-08T06:29:34.971Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-08T06:29:36.736Z"}

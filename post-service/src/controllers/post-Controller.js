@@ -4,28 +4,24 @@ const Post = require("../models/post-model");
 
 //create post
 const createPost = async (req, res) => {
-  logger.info("Create post endpoint hit...");
+  logger.info("Create post endpoint hit");
   try {
-    const { title, content, postType, linkUrl, mediaIDs, flair } = req.body;
-
-    // Validate required fields
-    if (!title || !postType) {
+    //validate the schema
+    const { error } = validateCreatePost(req.body);
+    if (error) {
+      logger.warn("Validation error", error.details[0].message);
       return res.status(400).json({
         success: false,
-        message: "Title and postType are required",
+        message: error.details[0].message,
       });
     }
-
-    // create a new post document
+    const { content, mediaIds } = req.body;
     const newlyCreatedPost = new Post({
       user: req.user.userId,
-      title,
-      postType,
       content,
-      linkUrl,
-      mediaIDs,
-      flair,
+      mediaIds: mediaIds || [],
     });
+
 
     //save post to database
     const savedPost = await newlyCreatedPost.save();
