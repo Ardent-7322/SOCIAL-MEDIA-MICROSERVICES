@@ -1,10 +1,10 @@
 const express = require('express');
-const {searchPostController} = require("../controller/search-controller")
-const {autheticateRequest}  = require("../middlewares/auth-middleware")
+const {searchPostController} = require("../controllers/search-controller")
+const {authenticationRequest}  = require("../middlewares/auth-middleware")
 
 const router = express.Router();
 
-router.use(autheticateRequest)
+router.use(authenticationRequest)
 
 router.get('/posts', searchPostController)
 

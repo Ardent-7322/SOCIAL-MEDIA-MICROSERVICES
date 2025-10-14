@@ -10,6 +10,8 @@ const { rateLimit } = require("express-rate-limit");
 const { RedisStore } = require("rate-limit-redis");
 const postRoutes = require("./routes/post-routes");
 const errorHandler = require("./middlewares/errorHandler");
+const { connectToRabbitMQ } = require("./utils/rabbitmq");
+
 
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -103,7 +105,7 @@ app.use("/posts", (req, res, next) => {
   next();
 });
 
-// NOTE : This means any request starting with /posts (e.g., /posts, /posts/123) 
+// NOTE : This means any request starting with /posts (e.g., /posts, /posts/123)
 // will first hit this middleware before it reaches the actual routes in postRoutes.
 
 //routes --> pass redisClient to routes
@@ -118,9 +120,18 @@ app.use(
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  logger.info(`Post service running on port ${PORT}`);
-});
+async function startServer() {
+  try {
+    await connectToRabbitMQ();
+    app.listen(PORT, () => {
+      logger.info(`Post service running on port ${PORT}`);
+    });
+  } catch (e) {
+    logger.error("Failed to connect to server", e);
+    process.exit(1);
+  }
+}
+startServer();
 
 //unhandled promise rejection
 

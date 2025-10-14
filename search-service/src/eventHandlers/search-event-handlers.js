@@ -13,19 +13,16 @@ async function handlePostCreated(event) {
         await newSearchPost.save();
         logger.info(`Search post created: ${event.postId}, ${newSearchPost._id.toString()}`)
     } catch (error) {
-        logger.error("Error handling post creatiion event")
+        logger.error("Error handling post creatiion event",error)
     }
 }
 
-async function handlePostDeleted(event){
-    try{
-        await Search.findByIdAndDelete({postId: event.postId});
-        logger.info(`Search post deleted :${event.postId}`);
-    }
-    catch(error){
-        logger.error("Error handling post deletion event")
-    }
-
+async function handlePostDeleted(event) {
+  try {
+    await Search.findOneAndDelete({ postId: event.postId });
+    logger.info(`Search post deleted: ${event.postId}}`);
+  } catch (error) {
+    logger.error(error, "Error handling post deletion event");
+  }
 }
-
 module.exports = {handlePostCreated, handlePostDeleted};

@@ -1,11 +1,11 @@
 const amqp = require('amqplib')
 const logger = require('./logger');
-const { json } = require('express');
+
 
 let connection = null;
 let channel = null;
 
-const EXCHANGE_NAME = 'social_app_events'
+const EXCHANGE_NAME =  "social_app_events";
 
 async function connectToRabbitMQ(){
     try {
@@ -34,4 +34,4 @@ async function publishEvent(routingKey, message) {
     
 }
 
-module.exports = {connectToRabbitMQ}
+module.exports = {connectToRabbitMQ, publishEvent}

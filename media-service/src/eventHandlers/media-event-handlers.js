@@ -1,8 +1,5 @@
 const Media = require("../models/Media");
-const {
-  deletedMediaFromCloudinary,
-  deleteMediaFromCloudinary,
-} = require("../utils/cloudinary");
+const { deleteMediaFromCloudinary } = require("../utils/cloudinary");
 const logger = require("../utils/logger");
 
 const handlePostDeleted = async (event) => {

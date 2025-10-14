@@ -1,21 +1,26 @@
-const logger = require("../utils/logger");
+const { get } = require("mongoose");
 const Media = require("../models/Media");
 const { uploadMediaToCloudinary } = require("../utils/cloudinary");
+const logger = require("../utils/logger");
+
 
 const uploadMedia = async (req, res) => {
-  logger.info("starting media upload");
+  logger.info("Starting media upload");
   try {
+    console.log(req.file, "req.filereq.file");
+
     if (!req.file) {
       logger.error("No file found. Please add a file and try again!");
       return res.status(400).json({
         success: false,
-        message: "No file found. PLease add a file and try again",
+        message: "No file found. Please add a file and try again!",
       });
     }
-    const { originalName, mimeType, buffer } = req.file;
+
+    const { originalname, mimetype, buffer } = req.file;
     const userId = req.user.userId;
 
-    logger.info(`File details : name=${originalName}, type=${mimeType}`);
+    logger.info(`File details: name=${originalname}, type=${mimetype}`);
     logger.info("Uploading to cloudinary starting...");
 
     const cloudinaryUploadResult = await uploadMediaToCloudinary(req.file);
@@ -25,8 +30,8 @@ const uploadMedia = async (req, res) => {
 
     const newlyCreatedMedia = new Media({
       publicId: cloudinaryUploadResult.public_id,
-      originalName,
-      mimeType,
+      originalName: originalname,
+      mimeType: mimetype,
       url: cloudinaryUploadResult.secure_url,
       userId,
     });
@@ -40,13 +45,39 @@ const uploadMedia = async (req, res) => {
       message: "Media upload is successfully",
     });
   } catch (error) {
-    logger.error("Error creating post", error);
+    logger.error("Error creating media", error);
     res.status(500).json({
       success: false,
-      message: "Error creating post",
+      message: "Error creating media",
     });
   }
 };
 
+const getAllMedias = async (req, res) => {
+  try {
+    const result = await Media.find({ userId: req.user.userId });
 
-module.exports = {uploadMedia};
+    if (result.length === 0) {
+      return res.status(404).json({
+        success: false,
+        message: "Can't find any media for this user",
+      });
+    }
+
+    //  Send success response
+    return res.status(200).json({
+      success: true,
+      message: "Medias fetched successfully",
+      data: result,
+    });
+  } catch (e) {
+    logger.error("Error fetching medias", e);
+    return res.status(500).json({
+      success: false,
+      message: "Error fetching medias",
+      error: e.message,
+    });
+  }
+};
+
+module.exports = { uploadMedia, getAllMedias};

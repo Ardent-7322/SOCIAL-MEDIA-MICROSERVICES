@@ -2,7 +2,7 @@ const logger = require("../utils/logger");
 const express = require("express");
 const Post = require("../models/post-model");
 const { validateCreatePost } = require("../utils/validation");
-const { invalid } = require("joi");
+const { publishEvent } = require("../utils/rabbitmq");
 
 //invalidate Post from cache (useful for single post)
 async function invalidatePostCache(req, input) {
@@ -38,6 +38,13 @@ const createPost = async (req, res) => {
     //save post to database
     const savedPost = await newlyCreatedPost.save();
 
+    //publish event for search service
+    await publishEvent("post.created", {
+      postId: newlyCreatedPost._id.toString(),
+      userId: newlyCreatedPost.user.toString(),
+      content: newlyCreatedPost.content,
+      createdAt: newlyCreatedPost.createdAt,
+    });
     await invalidatePostCache(req, newlyCreatedPost._id.toString());
     logger.info("Post created successfully", newlyCreatedPost);
     return res.status(201).json({
@@ -49,7 +56,7 @@ const createPost = async (req, res) => {
     logger.error("Create post error occured", error);
     res.status(500).json({
       success: false,
-      message: "Internal server error",
+      message: "creating post error",
     });
   }
 };
@@ -150,7 +157,12 @@ const deleteSinglePost = async (req, res) => {
         success: false,
       });
     }
-
+    //publish post delete method ->
+    await publishEvent("post.deleted", {
+      postId: post._id.toString(),
+      userId: req.user.userId,
+      mediaIds: post.mediaIds,
+    });
     await invalidatePostCache(req, req.params.id);
     res.json({
       message: "Post deleted succesfully",
@@ -159,7 +171,7 @@ const deleteSinglePost = async (req, res) => {
     logger.error("Deleting a post error occured", error);
     res.status(500).json({
       success: false,
-      message: "Internal server error",
+      message: "Error deleting post",
     });
   }
 };

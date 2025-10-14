@@ -3,10 +3,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const helmet = require("helmet");
-const SearchRoutes = require("./routes/media-routes");
-const errorHandler = require("./middleware/errorHandler");
+const SearchRoutes = require("./routes/search-routes");
+const errorHandler = require("./middlewares/errorHandler");
 const logger = require("./utils/logger");
 const { connectToRabbitMQ, consumeEvent } = require("./utils/rabbitmq");
+const { handlePostCreated, handlePostDeleted } = require("./eventHandlers/search-event-handlers");
+const {searchPostController} = require("./controllers/search-controller")
 
 const app = express();
 const PORT = process.env.PORT || 3004;
@@ -29,3 +31,26 @@ app.use((req, res, next) => {
 });
 
 //*** Homework--- implement Ip based rate limiting for sensitve endpoints*/
+
+app.use("/api/search",SearchRoutes );
+
+app.use(errorHandler)
+
+async function startServer(){
+  try {
+    await connectToRabbitMQ()
+
+    //consume the events / subscribe to the events 
+    await consumeEvent("post.created", handlePostCreated);
+    await consumeEvent("post.deleted", handlePostDeleted);
+
+    app.listen(PORT, ()=>{
+      logger.info(`Search service is running on port: ${PORT}`)
+    })
+  } catch (e) {
+    logger.error("Failed to start search service", e)
+    process.exit(1)
+  }
+}
+
+startServer();
