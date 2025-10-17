@@ -8,7 +8,7 @@ const { RedisStore } = require("rate-limit-redis");
 const logger = require("./utils/logger.api-gateway");
 const proxy = require("express-http-proxy");
 const errorHandler = require("./middlewares/errorHandler.api-gateway");
-const validateToken  = require("./middlewares/authMiddleware");
+const validateToken = require("./middlewares/authMiddleware");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -144,7 +144,7 @@ app.use(
 );
 app.use(errorHandler);
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   logger.info(`API Gateway is running on port ${PORT}`);
   logger.info(
     `Identity service is running on port ${process.env.IDENTITY_SERVICE_URL}`
@@ -155,9 +155,8 @@ app.listen(PORT, () => {
   logger.info(
     `Media service is running on port ${process.env.MEDIA_SERVICE_URL}`
   );
-   logger.info(
+  logger.info(
     `Search service is running on port ${process.env.SEARCH_SERVICE_URL}`
   );
-  
   logger.info(`Redis Url ${process.env.REDIS_URL}`);
 });

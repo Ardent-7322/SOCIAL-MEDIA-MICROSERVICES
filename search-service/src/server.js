@@ -9,6 +9,7 @@ const logger = require("./utils/logger");
 const { connectToRabbitMQ, consumeEvent } = require("./utils/rabbitmq");
 const { handlePostCreated, handlePostDeleted } = require("./eventHandlers/search-event-handlers");
 const {searchPostController} = require("./controllers/search-controller")
+const {rateLimit} = require("express-rate-limit")
 
 const app = express();
 const PORT = process.env.PORT || 3004;
@@ -32,7 +33,19 @@ app.use((req, res, next) => {
 
 //*** Homework--- implement Ip based rate limiting for sensitve endpoints*/
 
-app.use("/api/search",SearchRoutes );
+const searchlimiter = rateLimit({
+windowMs: 60*1000,
+max : 20,
+message:{
+success : false,
+message: "Too many requests from this IP, try after some time"
+},
+standardHeaders: true,
+legacyHeaders: false,
+})
+
+
+app.use("/api/search",searchlimiter,SearchRoutes );
 
 app.use(errorHandler)
 
@@ -44,7 +57,7 @@ async function startServer(){
     await consumeEvent("post.created", handlePostCreated);
     await consumeEvent("post.deleted", handlePostDeleted);
 
-    app.listen(PORT, ()=>{
+    app.listen(PORT,"0.0.0.0", ()=>{
       logger.info(`Search service is running on port: ${PORT}`)
     })
   } catch (e) {

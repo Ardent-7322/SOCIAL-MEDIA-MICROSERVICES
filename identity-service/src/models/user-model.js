@@ -24,6 +24,23 @@ const userSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
+
+    //follows functionallity
+    followers: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        default: [],
+      },
+    ],
+
+    following: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        default: [],
+      },
+    ],
   },
   {
     timestamps: true,

@@ -44,7 +44,7 @@ async function startServer() {
     //consume all the events
     await consumeEvent("post.deleted", handlePostDeleted);
 
-    app.listen(PORT, () => {
+    app.listen(PORT,"0.0.0.0", () => {
       logger.info(`Media service running on port ${PORT}`);
     });
   } catch (error) {

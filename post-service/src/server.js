@@ -95,7 +95,7 @@ const lowRiskLimiter = rateLimit({
 });
 
 //routes to rate limiter
-app.use("/posts", (req, res, next) => {
+app.use("/posts",  (req, res, next) => {
   // Apply limiter based on risk
   if (req.method === "POST" || req.method === "DELETE")
     return highRiskLimiter(req, res, next);
@@ -123,7 +123,7 @@ app.use(errorHandler);
 async function startServer() {
   try {
     await connectToRabbitMQ();
-    app.listen(PORT, () => {
+    app.listen(PORT,"0.0.0.0", () => {
       logger.info(`Post service running on port ${PORT}`);
     });
   } catch (e) {
