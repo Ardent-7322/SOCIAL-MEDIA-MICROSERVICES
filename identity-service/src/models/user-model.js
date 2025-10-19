@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const argon2 = require("argon2");
+const { string } = require("joi");
 
 const userSchema = new mongoose.Schema(
   {
@@ -7,6 +8,13 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
+      trim: true,
+      minlenght: 3,
+      index: true, // for search
+    },
+    name: {
+      type: String,
+      required: true,
       trim: true,
     },
     email: {
@@ -19,6 +27,12 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
+      select: false, //hides passwrod by default
+    },
+    bio: {
+      type: string,
+      maxlenght: 200,
+      default: "",
     },
     createdAt: {
       type: Date,
@@ -39,6 +53,12 @@ const userSchema = new mongoose.Schema(
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
         default: [],
+      },
+    ],
+    posts: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Post",
       },
     ],
   },
@@ -70,7 +90,7 @@ userSchema.methods.comparePassword = async function (candidatePassword) {
 
 //search username (index schema)
 
-userSchema.index({ username: "text" });
+userSchema.index({ username: "text", name: "text" });
 
 const User = mongoose.model("User", userSchema);
 module.exports = User;

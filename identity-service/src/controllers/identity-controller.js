@@ -6,7 +6,7 @@ const logger = require("../utils/logger");
 const { validateRegistration, validatelogin } = require("../utils/validation");
 const generateTokens = require("../utils/generateTokens");
 
-// user registration
+// -------------user registration--------------
 const registerUser = async (req, res) => {
   logger.info("Registration endpoint hit...");
   try {
@@ -19,7 +19,7 @@ const registerUser = async (req, res) => {
         message: error.details[0].message,
       });
     }
-    const { username, email, password } = req.body;
+    const { username, name, email, password } = req.body;
 
     let user = await User.findOne({ $or: [{ email }, { username }] });
     if (user) {
@@ -32,7 +32,13 @@ const registerUser = async (req, res) => {
 
     //new user
 
-    user = new User({ username, email, password });
+    user = new User({
+      username,
+      name,
+      email,
+      password,
+      bio: bio || "",
+    });
     await user.save(); // _id will get from here
     logger.warn("User saved successfully", user._id);
 
@@ -43,6 +49,7 @@ const registerUser = async (req, res) => {
       message: "User registered successfully",
       accessToken,
       refreshToken,
+      userId: user._id,
     });
   } catch (error) {
     logger.error("Registration error occured", error);
@@ -53,8 +60,7 @@ const registerUser = async (req, res) => {
   }
 };
 
-
-//user login
+//-----------------user login------------------
 const loginUser = async (req, res) => {
   logger.info("Login endpoint hits...");
   try {
@@ -66,11 +72,14 @@ const loginUser = async (req, res) => {
         message: error.details[0].message,
       });
     }
-    const { email, password } = req.body;
-    const user = await User.findOne({ email });
+    const { identifier, password } = req.body;
+    // identifier === email || username
+    const user = await User.findOne({
+      $or: [{ email: identifier }, { username: identifier }],
+    });
 
     if (!user) {
-      logger.warn("User not exists");
+      logger.warn("User not found!");
       return re.status(400).json({
         success: false,
         message: "Invalid credentials",
@@ -102,8 +111,7 @@ const loginUser = async (req, res) => {
   }
 };
 
-
-//refresh token
+//--------------refresh token------------
 const refreshTokenUser = async (req, res) => {
   logger.info("Refresh Token endpoint hits...");
 
@@ -167,38 +175,36 @@ const refreshTokenUser = async (req, res) => {
   }
 };
 
-
-//logout
-const logoutUser = async(req, res) => {
+//--------------logout--------------------
+const logoutUser = async (req, res) => {
   logger.info("Logout User endpoint hits...");
   try {
     const { refreshToken } = req.body;
-    if(!refreshToken) {
+    if (!refreshToken) {
       logger.warn("Refresh Token missing");
       return res.status(400).json({
-        success : false,
-        message : "Refresh token missing"
-      })
+        success: false,
+        message: "Refresh token missing",
+      });
     }
 
     const storedToken = await RefreshToken.findOneAndDelete({
-      token : refreshToken,
-    })
+      token: refreshToken,
+    });
 
-    if(!storedToken) {
+    if (!storedToken) {
       logger.warn("Invalid refresh token provided");
       return res.status(400).json({
-        success : false,
-        message : "Invalid refresh token",
-      })
+        success: false,
+        message: "Invalid refresh token",
+      });
     }
     logger.info("Refresh token deleted for logour");
 
     res.json({
-      success : true,
-      message : "Logged Out Succesfully!"
-    })
-    
+      success: true,
+      message: "Logged Out Succesfully!",
+    });
   } catch (e) {
     logger.error("logout error occured", e);
     res.status(500).json({
@@ -206,6 +212,102 @@ const logoutUser = async(req, res) => {
       message: "Interal server error ",
     });
   }
-}
+};
 
-module.exports = { registerUser, loginUser, refreshTokenUser , logoutUser};
+//--------------Get User Profile-----------
+const getUserProfile = async (req, res) => {
+  logger.info("Get user profile endpoint hit...");
+  try {
+    const { userId } = req.params;
+    const user = await User.findById(userId).select(
+      "username name posts followers following"
+    );
+
+    if (!user) {
+      logger.warn("User not found");
+      return res.status(404).json({
+        success: false,
+        messsage: "user not found!",
+      });
+    }
+    return res.status(200).json({
+      success: true,
+      message: "User profile fetched successfully ",
+      data: {
+        username: user.username,
+        name: user.name,
+        posts: user.posts.length,
+        followers: user.followers.length,
+        following: user.following.length,
+      },
+    });
+  } catch (e) {
+    logger.error("Error fetching user profile:", e);
+    return res.status(500).json({
+      success: false,
+      message: "Internal server error",
+    });
+  }
+};
+
+// ------- Get Followers/following --------
+const getUserConnections = async (req, res) => {
+  logger.info("Get user connections endpoint hit....");
+  try {
+    const { userId } = req.params;
+    const user = await User.findById(userId)
+      .populate("followers", "username name")
+      .populate("following", "username name");
+
+    if (!user) {
+      return res.status(404).json({
+        succss: false,
+        message: "User not found",
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: "User connections fetched successfully ",
+      data: {
+        followers: user.followers,
+        following: user.following,
+      },
+    });
+  } catch (e) {
+    logger.error("Error fetching user profile:", e);
+    return res.status(500).json({
+      success: false,
+      message: "Internal server error",
+    });
+  }
+};
+
+// ------ Get all Users (For search)--------
+const getAllUsers = async (req, res) => {
+  logger.info("Get all user endpoint hit...");
+  try {
+    const users = await User.find({}, "username name");
+    res.json({
+      succss: true,
+      count: users.length,
+      data: users,
+    });
+  } catch (e) {
+    logger.error("Error fetching user profile:", e);
+    return res.status(500).json({
+      success: false,
+      message: "Internal server error",
+    });
+  }
+};
+
+module.exports = {
+  registerUser,
+  loginUser,
+  refreshTokenUser,
+  logoutUser,
+  getUserProfile,
+  getUserConnections,
+  getAllUsers,
+};

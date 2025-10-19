@@ -5,7 +5,7 @@ const logger = require("../utils/logger");
 const toggleFollow = async (req, res) => {
   try {
     const { targetUserId } = req.body;
-    const currentUserId = req.user.userId; // comes from auth middleware
+    const currentUserId = req.user.userId; // from auth middleware
 
     if (!targetUserId) {
       logger.error("The user you want to follow not found");
@@ -14,17 +14,17 @@ const toggleFollow = async (req, res) => {
         message: "targetUserId is required",
       });
     }
-    // if current user entered his own id
+
     if (currentUserId.toString() === targetUserId) {
-      logger.warn(`User tried to follow themselves :${currentUserId}`);
+      logger.warn(`User tried to follow themselves: ${currentUserId}`);
       return res.status(400).json({
-        status: false,
-        message: "you can not follow yourself",
+        success: false,
+        message: "You cannot follow yourself",
       });
     }
 
     const session = await mongoose.startSession();
-    session.startSession();
+    session.startTransaction(); // ✅ FIXED
 
     try {
       const currentUser = await User.findById(currentUserId).session(session);
@@ -34,7 +34,7 @@ const toggleFollow = async (req, res) => {
         await session.abortTransaction();
         session.endSession();
         logger.warn(
-          `User not found. Current :${currentUserId}, Target: ${targetUserId}`
+          `User not found. Current: ${currentUserId}, Target: ${targetUserId}`
         );
         return res.status(404).json({ message: "User not found" });
       }
@@ -43,16 +43,14 @@ const toggleFollow = async (req, res) => {
       let message;
 
       if (isFollowing) {
-        // Unfollow
         currentUser.following = currentUser.following.filter(
           (id) => id.toString() !== targetUserId
         );
         targetUser.followers = targetUser.followers.filter(
-          (id) => id.toString() !== currentUserId.toString()
+          (id) => id.toString() !== currentUserId
         );
         message = "User unfollowed successfully";
       } else {
-        // Follow
         currentUser.following.push(targetUserId);
         targetUser.followers.push(currentUserId);
         message = "User followed successfully";
@@ -64,9 +62,11 @@ const toggleFollow = async (req, res) => {
       await session.commitTransaction();
       session.endSession();
 
-      // publish event to notifiaction
-
-      const event = action === "followed" ? "user.followed" : "user.unfollowed";
+      logger.info(message);
+      return res.status(200).json({
+        success: true,
+        message,
+      });
     } catch (error) {
       await session.abortTransaction();
       session.endSession();
@@ -84,4 +84,4 @@ const toggleFollow = async (req, res) => {
   }
 };
 
-module.exports = {toggleFollow}
+module.exports = { toggleFollow };

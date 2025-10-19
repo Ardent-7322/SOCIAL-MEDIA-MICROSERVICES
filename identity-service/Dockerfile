@@ -1,15 +1,18 @@
-# use the official node.js 18 image with alpine linux as the base image
-
+# Use official Node.js 18 Alpine image
 FROM node:18-alpine
 
-WORKDIR /use/src/app
+# Correct working directory
+WORKDIR /usr/src/app
 
+# Copy package files and install dependencies
 COPY package*.json ./
+RUN npm install
 
-RUN npm ci --only=production
-
+# Copy the rest of the code
 COPY . .
 
+# Expose service port (change per service)
 EXPOSE 3001
 
-CMD ["node", "src/server.js"]
+# Use nodemon for dev hot reload
+CMD ["npm", "run", "dev"]
