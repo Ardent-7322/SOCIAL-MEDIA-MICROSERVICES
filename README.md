@@ -82,7 +82,7 @@ docker-compose up --build
 
 Once running, the API Gateway is available at:
 ```
-http://localhost:3080/
+http://localhost:3000/
 ```
 
 ## Design Decisions
