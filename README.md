@@ -1,109 +1,77 @@
 # Social Media Microservices
 
-## Overview
+A distributed backend built to understand how large systems split functionality across independent services - and what that actually costs in terms of complexity.
 
-This is a learning-focused backend project where I built a simplified social media platform using a microservices architecture. The intent was to understand how real-world systems split functionality into independent services and how those services interact through well-defined boundaries.
+This is not a feature-complete social network. The focus was on getting the architecture right: clean service boundaries, independent data ownership, async communication, and a single entry point for clients.
 
-The project is not meant to be a full-featured social network. Instead, it focuses on clarity around service responsibilities, data ownership, and the trade-offs involved when choosing microservices over simpler architectures.
 
-## What This System Does
+## Services
 
-- Handles user registration, login, and profile management
-- Allows users to create and fetch posts
-- Supports media uploads and retrieval for images and videos
-- Provides basic search across users, posts, and media
-- Routes all client requests through a centralized API Gateway
-- Runs all services locally using Docker Compose
-
-## Project Structure
 ```
 SOCIAL-MEDIA-MICROSERVICES
-├── api-gateway        # Central entry point for all client requests
-├── identity-service   # Authentication, authorization, user profiles
-├── post-service       # Post creation, feeds, and timelines
-├── media-service      # Media upload and retrieval
-└── search-service     # Search functionality
+├── api-gateway        - single entry point, routing + rate limiting + auth checks
+├── identity-service   - registration, login, JWT issuance, user profiles
+├── post-service       - post creation, timelines, feeds
+├── media-service      - image and video upload, storage, retrieval
+└── search-service     - search across users, posts, and media
 ```
 
-Each service is developed and deployed independently and owns its own data.
+Each service runs independently, owns its own database, and exposes no internal endpoints to clients.
 
-## How the System Works
 
-Client requests are sent to the API Gateway, which forwards them to the appropriate service based on the route. Each service processes the request, interacts with its own database or external storage if needed, and returns a response back through the gateway.
+## How requests flow
 
-**Important aspects of this flow:**
+```
+Client
+  → API Gateway (auth check + rate limiting)
+  → Internal service (Identity / Post / Media / Search)
+  → Own database or Cloudinary
+  → Response back through gateway
+```
 
-- Clients never communicate directly with internal services
-- Services do not share databases
-- Each service focuses on a single responsibility
-- Communication is synchronous and REST-based for simplicity
+Services communicate synchronously over REST for simplicity. Async events via RabbitMQ handle cases where tight coupling would be a problem - like fan-out operations after a post is created.
 
-## Architecture Notes
 
-A microservices approach was chosen to explore how large systems manage complexity by separating concerns across services. This design improves isolation and scalability but also introduces additional operational overhead compared to a monolithic application.
+## Tech stack
 
-This project helped me understand those trade-offs in a practical way.
+| Layer | Technology |
+|---|---|
+| Language | Node.js, Express.js |
+| Databases | MongoDB (one per service) |
+| Auth | JWT |
+| Async messaging | RabbitMQ |
+| Caching | Redis |
+| Media storage | Cloudinary |
+| Containerization | Docker, Docker Compose |
 
-## Features by Service
 
-### Identity Service
-Responsible for user accounts, authentication, JWT issuance, and profile management.
+## Design decisions
 
-### Post Service
-Handles post creation, timeline generation, and feed retrieval.
+**One database per service** - services share nothing at the data layer. This keeps them independently deployable and prevents tight coupling through shared schema.
 
-### Media Service
-Manages uploading, storing, and serving images and videos using cloud storage.
+**API Gateway as the only public surface** - clients never talk to internal services directly. Auth is checked at the gateway before any request reaches a service.
 
-### Search Service
-Provides search functionality over users, posts, and media content.
+**RabbitMQ for async events** - used where a synchronous call would create unnecessary coupling. For example, the post service publishes an event after creation; other services consume it independently.
 
-### API Gateway
-Acts as the single entry point, routing requests and applying basic security checks.
+**Redis caching** - sits in front of frequently read data to reduce database load on hot paths.
 
-## Tech Stack
 
-| Component | Technology |
-|-----------|------------|
-| Language | JavaScript (Node.js) |
-| Databases | MongoDB, with a separate database for each service |
-| Authentication | JWT-based authentication |
-| Media Storage | Cloudinary |
-| Containerization | Docker and Docker Compose |
+## Running locally
 
-## Running the Project Locally
-
-Clone the repository and start all services using Docker Compose.
 ```bash
 git clone https://github.com/Ardent-7322/SOCIAL-MEDIA-MICROSERVICES
 cd SOCIAL-MEDIA-MICROSERVICES
 docker-compose up --build
 ```
 
-Once running, the API Gateway is available at:
-```
-http://localhost:3000/
-```
+API Gateway available at `http://localhost:3000`
 
-## Design Decisions
 
-- An API Gateway was added to prevent clients from accessing internal services directly
-- Each service owns its own database to avoid tight coupling
-- Docker Compose is used to simplify local development of multiple services
-- Asynchronous messaging was intentionally skipped to keep the system easier to reason about
+## Known limitations
 
-## Limitations
+- Search is basic  no relevance ranking or fuzzy matching
+- No distributed tracing or centralized logging across services
+- Error handling and retry logic is minimal
+- Feed generation is simple; no ranking or personalization
 
-- There is no message queue for asynchronous events like feed updates
-- Search functionality is basic
-- Error handling and retries are minimal
-- There is no centralized logging or distributed tracing
-
-These limitations were accepted to focus on core architectural concepts.
-
-## Key Takeaways
-
-- Learned how to define service boundaries in a distributed system
-- Understood the complexity involved in running multiple services
-- Gained experience with authentication across service boundaries
-- Developed a practical understanding of when microservices make sense and when they may be unnecessary
+These were intentional trade-offs to keep the focus on architecture rather than feature completeness.
