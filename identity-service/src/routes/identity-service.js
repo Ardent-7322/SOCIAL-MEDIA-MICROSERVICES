@@ -19,6 +19,6 @@ router.post("/logout", logoutUser);
 router.post("/refreshToken", refreshTokenUser);
 router.post("/follow", authenticationRequest, toggleFollow);
 router.get("/:userId", authenticationRequest, getUserProfile);
-router.get("/:userID/connections", authenticationRequest, getUserConnections)
+router.get("/:userId/connections", authenticationRequest, getUserConnections)
 
 module.exports = router;

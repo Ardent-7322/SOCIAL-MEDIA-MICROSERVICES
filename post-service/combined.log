@@ -438,3 +438,167 @@
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-14T05:01:00.919Z"}
 {"level":"info","message":" Post delete endpoint hit...","service":"identity-service","timestamp":"2025-10-14T05:01:00.920Z"}
 {"level":"info","message":"Event published: post.deleted","service":"identity-service","timestamp":"2025-10-14T05:01:01.017Z"}
+{"address":"172.18.0.3","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Error connecting to rabbit mq connect ECONNREFUSED 172.18.0.3:5672","port":5672,"service":"identity-service","stack":"Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","syscall":"connect","timestamp":"2025-10-18T06:33:11.699Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T06:33:11.710Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T06:33:14.114Z"}
+{"address":"172.18.0.3","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Error connecting to rabbit mq connect ECONNREFUSED 172.18.0.3:5672","port":5672,"service":"identity-service","stack":"Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","syscall":"connect","timestamp":"2025-10-18T11:47:12.132Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T11:47:12.207Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T11:47:13.708Z"}
+{"address":"172.18.0.6","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Error connecting to rabbit mq connect ECONNREFUSED 172.18.0.6:5672","port":5672,"service":"identity-service","stack":"Error: connect ECONNREFUSED 172.18.0.6:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","syscall":"connect","timestamp":"2025-10-18T12:00:24.151Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T12:00:24.186Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T12:00:27.328Z"}
+{"address":"172.18.0.3","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Error connecting to rabbit mq connect ECONNREFUSED 172.18.0.3:5672","port":5672,"service":"identity-service","stack":"Error: connect ECONNREFUSED 172.18.0.3:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","syscall":"connect","timestamp":"2025-10-18T12:08:20.588Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T12:08:20.621Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T12:08:21.627Z"}
+{"address":"172.18.0.4","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Error connecting to rabbit mq connect ECONNREFUSED 172.18.0.4:5672","port":5672,"service":"identity-service","stack":"Error: connect ECONNREFUSED 172.18.0.4:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","syscall":"connect","timestamp":"2025-10-18T12:11:45.544Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T12:11:45.554Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T12:11:46.942Z"}
+{"address":"172.18.0.2","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Error connecting to rabbit mq connect ECONNREFUSED 172.18.0.2:5672","port":5672,"service":"identity-service","stack":"Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","syscall":"connect","timestamp":"2025-10-18T12:14:17.546Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T12:14:17.561Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T12:14:22.376Z"}
+{"address":"172.18.0.2","code":"ECONNREFUSED","errno":-111,"level":"error","message":"Error connecting to rabbit mq connect ECONNREFUSED 172.18.0.2:5672","port":5672,"service":"identity-service","stack":"Error: connect ECONNREFUSED 172.18.0.2:5672\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","syscall":"connect","timestamp":"2025-10-18T12:23:12.771Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T12:23:12.801Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T12:23:13.647Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-18T12:28:52.516Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-18T12:28:52.526Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-18T12:28:53.250Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-19T13:53:33.063Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-19T13:53:33.072Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-19T13:53:33.887Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T10:58:51.235Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T10:58:51.245Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T10:58:51.829Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:12:48.501Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:12:48.509Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:12:49.174Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:17:15.336Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:17:15.344Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:17:16.257Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:22:14.054Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:22:14.065Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:22:14.727Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:25:10.303Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:25:10.317Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:25:10.846Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:27:23.454Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:27:23.460Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:27:24.014Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:33:04.670Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:33:04.682Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:33:05.230Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:39:26.024Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:39:26.036Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:39:26.525Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:49:13.443Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:49:13.458Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:49:13.992Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T11:59:43.159Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T11:59:43.168Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T11:59:43.905Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-21T12:05:01.838Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-21T12:05:01.850Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-21T12:05:02.684Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-22T05:31:23.116Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-22T05:31:23.137Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-22T05:31:23.792Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-22T05:40:43.225Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-22T05:40:43.237Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-22T05:40:43.897Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-22T05:44:33.681Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-22T05:44:33.700Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-22T05:44:34.354Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-22T05:51:07.597Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-22T05:51:07.607Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-22T05:51:08.372Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-22T06:11:55.948Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-22T06:11:55.956Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-22T06:11:56.469Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-22T06:14:06.654Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-22T06:14:06.667Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-22T06:14:07.230Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T05:23:35.647Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T05:23:35.655Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T05:23:36.289Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T05:27:05.892Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T05:27:05.904Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T05:27:06.501Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T05:35:39.931Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T05:35:39.939Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T05:35:40.609Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T05:42:55.092Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T05:42:55.105Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T05:42:55.918Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T05:45:19.383Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T05:45:19.398Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T05:45:20.085Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T05:47:06.424Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T05:47:06.443Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T05:47:07.712Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T05:56:27.486Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T05:56:27.496Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T05:56:28.461Z"}
+{"code":"ENOTFOUND","hostname":"_mongodb._tcp.cluster0.tbguzec.mongodb.net","level":"error","message":"Mongo connection error querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net","service":"identity-service","stack":"Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)","syscall":"querySrv","timestamp":"2025-10-23T06:03:30.721Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T06:03:30.817Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T06:03:30.819Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T06:15:22.201Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T06:15:22.227Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T06:15:23.027Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T06:20:23.764Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T06:20:23.773Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T06:20:24.789Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T06:24:47.411Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T06:24:47.423Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T06:24:48.390Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T06:29:30.862Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T06:29:30.872Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T06:29:32.001Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-10-23T06:39:44.306Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-10-23T06:39:44.317Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-10-23T06:39:54.588Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2025-11-09T11:36:01.975Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2025-11-09T11:36:01.984Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2025-11-09T11:36:02.458Z"}
+{"level":"info","message":"Received POST requested to /api/posts/create-post","service":"identity-service","timestamp":"2025-11-09T11:42:33.117Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:42:33.128Z"}
+{"level":"info","message":"Create post endpoint hit","service":"identity-service","timestamp":"2025-11-09T11:42:33.133Z"}
+{"level":"info","message":"Event published: post.created","service":"identity-service","timestamp":"2025-11-09T11:42:33.598Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"content":"require","user":"require"},"states":{"default":{},"modify":{},"require":{"content":true,"user":true}}},"backup":{"activePaths":{"default":{"_id":true,"createdAt":true},"modify":{"content":true,"mediaIds":true,"updatedAt":true,"user":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"pathsToScopes":{"mediaIds":{"__v":0,"_id":"69107e29c17916f9b4d96ac4","content":"Hey this is me Jude Bellingham ","createdAt":"2025-11-09T11:42:33.329Z","mediaIds":["69107de67e48544d1a2ff7df"],"updatedAt":"2025-11-09T11:42:33.329Z","user":"69107d310dabc632554745db"}},"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"69107e29c17916f9b4d96ac4","content":"Hey this is me Jude Bellingham ","createdAt":"2025-11-09T11:42:33.329Z","mediaIds":["69107de67e48544d1a2ff7df"],"updatedAt":"2025-11-09T11:42:33.329Z","user":"69107d310dabc632554745db"},"level":"info","message":"Post created successfully","service":"identity-service","timestamp":"2025-11-09T11:42:33.616Z"}
+{"level":"info","message":"Received GET requested to /api/posts/69107e29c17916f9b4d96ac4","service":"identity-service","timestamp":"2025-11-09T11:43:24.539Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:43:24.541Z"}
+{"level":"info","message":"Get a post endpoint hit...","service":"identity-service","timestamp":"2025-11-09T11:43:24.547Z"}
+{"level":"info","message":"Received GET requested to /api/posts/all-posts","service":"identity-service","timestamp":"2025-11-09T11:43:43.447Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:43:43.451Z"}
+{"level":"info","message":"Get all post endpoint hit...","service":"identity-service","timestamp":"2025-11-09T11:43:43.453Z"}
+{"code":"ENOTFOUND","hostname":"_mongodb._tcp.cluster0.tbguzec.mongodb.net","level":"error","message":"Mongo connection error querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net","service":"identity-service","stack":"Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)","syscall":"querySrv","timestamp":"2026-03-11T02:30:20.804Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T02:30:20.883Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T02:30:20.887Z"}
+{"code":"ENOTFOUND","hostname":"_mongodb._tcp.cluster0.tbguzec.mongodb.net","level":"error","message":"Mongo connection error querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net","service":"identity-service","stack":"Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)","syscall":"querySrv","timestamp":"2026-03-11T02:55:52.837Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T02:55:52.970Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T02:55:52.984Z"}
+{"code":"ENOTFOUND","hostname":"_mongodb._tcp.cluster0.tbguzec.mongodb.net","level":"error","message":"Mongo connection error querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net","service":"identity-service","stack":"Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)","syscall":"querySrv","timestamp":"2026-03-11T03:13:04.525Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:13:04.628Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:13:04.637Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:22:26.570Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:22:26.580Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","message":"Mongo connection error bad auth : authentication failed","ok":0,"service":"identity-service","stack":"MongoServerError: bad auth : authentication failed\n    at Connection.sendCommand (/usr/src/app/node_modules/mongodb/lib/cmap/connection.js:306:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Connection.command (/usr/src/app/node_modules/mongodb/lib/cmap/connection.js:334:26)\n    at async continueScramConversation (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:131:15)\n    at async executeScram (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:80:5)\n    at async ScramSHA1.auth (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:39:16)\n    at async performInitialHandshake (/usr/src/app/node_modules/mongodb/lib/cmap/connect.js:104:13)\n    at async connect (/usr/src/app/node_modules/mongodb/lib/cmap/connect.js:24:9)","timestamp":"2026-03-11T03:22:27.092Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:24:39.546Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:24:39.557Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","message":"Mongo connection error bad auth : authentication failed","ok":0,"service":"identity-service","stack":"MongoServerError: bad auth : authentication failed\n    at Connection.sendCommand (/usr/src/app/node_modules/mongodb/lib/cmap/connection.js:306:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Connection.command (/usr/src/app/node_modules/mongodb/lib/cmap/connection.js:334:26)\n    at async continueScramConversation (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:131:15)\n    at async executeScram (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:80:5)\n    at async ScramSHA1.auth (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:39:16)\n    at async performInitialHandshake (/usr/src/app/node_modules/mongodb/lib/cmap/connect.js:104:13)\n    at async connect (/usr/src/app/node_modules/mongodb/lib/cmap/connect.js:24:9)","timestamp":"2026-03-11T03:24:40.097Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:31:11.020Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:31:11.039Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","message":"Mongo connection error bad auth : authentication failed","ok":0,"service":"identity-service","stack":"MongoServerError: bad auth : authentication failed\n    at Connection.sendCommand (/usr/src/app/node_modules/mongodb/lib/cmap/connection.js:306:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Connection.command (/usr/src/app/node_modules/mongodb/lib/cmap/connection.js:334:26)\n    at async continueScramConversation (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:131:15)\n    at async executeScram (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:80:5)\n    at async ScramSHA1.auth (/usr/src/app/node_modules/mongodb/lib/cmap/auth/scram.js:39:16)\n    at async performInitialHandshake (/usr/src/app/node_modules/mongodb/lib/cmap/connect.js:104:13)\n    at async connect (/usr/src/app/node_modules/mongodb/lib/cmap/connect.js:24:9)","timestamp":"2026-03-11T03:31:11.596Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:38:02.335Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:38:02.342Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2026-03-11T03:38:02.811Z"}
+{"level":"error","message":"Mongo connection error Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"","service":"identity-service","stack":"MongoParseError: Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"\n    at new ConnectionString (/usr/src/app/node_modules/mongodb-connection-string-url/lib/index.js:86:19)\n    at parseOptions (/usr/src/app/node_modules/mongodb/lib/connection_string.js:197:17)\n    at new MongoClient (/usr/src/app/node_modules/mongodb/lib/mongo_client.js:68:61)\n    at NativeConnection.createClient (/usr/src/app/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:343:14)\n    at NativeConnection.openUri (/usr/src/app/node_modules/mongoose/lib/connection.js:1071:34)\n    at Mongoose.connect (/usr/src/app/node_modules/mongoose/lib/mongoose.js:450:15)\n    at Object.<anonymous> (/usr/src/app/src/server.js:20:4)\n    at Module._compile (node:internal/modules/cjs/loader:1364:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)\n    at Module.load (node:internal/modules/cjs/loader:1203:32)","timestamp":"2026-03-11T03:39:07.663Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:39:07.760Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:39:07.765Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:44:06.252Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:44:06.262Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2026-03-11T03:44:06.743Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:48:58.159Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:48:58.167Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2026-03-11T03:48:58.584Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:51:28.117Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:51:28.125Z"}
+{"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2026-03-11T03:51:28.620Z"}

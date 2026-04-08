@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "argon": "^2.0.21"
+  }
+}

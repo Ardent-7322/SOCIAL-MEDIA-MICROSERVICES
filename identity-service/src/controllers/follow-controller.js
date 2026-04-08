@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const User = require("../models/user-model");
 const logger = require("../utils/logger");
+const { publishEvent} = require("../utils/rabbitmq"); // ✅ Import RabbitMQ publisher
 
 const toggleFollow = async (req, res) => {
   try {
@@ -23,60 +24,90 @@ const toggleFollow = async (req, res) => {
       });
     }
 
+    // Start transaction
     const session = await mongoose.startSession();
-    session.startTransaction(); // ✅ FIXED
+    session.startTransaction();
 
     try {
-      const currentUser = await User.findById(currentUserId).session(session);
-      const targetUser = await User.findById(targetUserId).session(session);
-
-      if (!currentUser || !targetUser) {
+      // Ensure target user exists
+      const targetExists = await User.exists({ _id: targetUserId }).session(session);
+      if (!targetExists) {
         await session.abortTransaction();
         session.endSession();
-        logger.warn(
-          `User not found. Current: ${currentUserId}, Target: ${targetUserId}`
-        );
-        return res.status(404).json({ message: "User not found" });
+        logger.warn(`Target user not found: ${targetUserId}`);
+        return res.status(404).json({ success: false, message: "Target user not found" });
       }
 
-      const isFollowing = currentUser.following.includes(targetUserId);
+      // Check if already following
+      const isFollowing = await User.exists({
+        _id: currentUserId,
+        following: targetUserId,
+      }).session(session);
+
       let message;
 
       if (isFollowing) {
-        currentUser.following = currentUser.following.filter(
-          (id) => id.toString() !== targetUserId
-        );
-        targetUser.followers = targetUser.followers.filter(
-          (id) => id.toString() !== currentUserId
-        );
+        //  Unfollow
+        await User.updateOne(
+          { _id: currentUserId },
+          { $pull: { following: targetUserId } }
+        ).session(session);
+
+        await User.updateOne(
+          { _id: targetUserId },
+          { $pull: { followers: currentUserId } }
+        ).session(session);
+
         message = "User unfollowed successfully";
+        logger.info(`User ${currentUserId} unfollowed ${targetUserId}`);
       } else {
-        currentUser.following.push(targetUserId);
-        targetUser.followers.push(currentUserId);
+        //  Follow
+        await User.updateOne(
+          { _id: currentUserId },
+          { $push: { following: targetUserId } }
+        ).session(session);
+
+        await User.updateOne(
+          { _id: targetUserId },
+          { $push: { followers: currentUserId } }
+        ).session(session);
+
         message = "User followed successfully";
+        logger.info(`User ${currentUserId} followed ${targetUserId}`);
+
+        //  Publish event to RabbitMQ for Notification Service
+        const event = {
+          type: "USER_FOLLOWED",
+          data: {
+            followerId: currentUserId,
+            followedId: targetUserId,
+            timestamp: new Date().toISOString(),
+          },
+        };
+
+        await publishEvent("notification_events", JSON.stringify(event));
+        logger.info(` Follow event published: ${JSON.stringify(event)}`);
       }
 
-      await currentUser.save({ session });
-      await targetUser.save({ session });
-
+      // Commit transaction
       await session.commitTransaction();
       session.endSession();
 
-      logger.info(message);
       return res.status(200).json({
         success: true,
         message,
       });
-    } catch (error) {
+    } catch (err) {
       await session.abortTransaction();
       session.endSession();
-      logger.error("Follow transaction failed:", error);
-      return res
-        .status(500)
-        .json({ success: false, message: "Internal server error" });
+      logger.error("Follow transaction failed:", err);
+      return res.status(500).json({
+        success: false,
+        message: "Internal server error",
+      });
     }
-  } catch (error) {
-    logger.error("Toggle follow error", error);
+  } catch (err) {
+    logger.error("Toggle follow error:", err);
     return res.status(500).json({
       success: false,
       message: "Server error",

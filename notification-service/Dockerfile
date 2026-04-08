@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Expose service port (change per service)
-EXPOSE 3004
+EXPOSE 3005
 
 # Use nodemon for dev hot reload
 CMD ["npm", "run", "dev"]

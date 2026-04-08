@@ -19,8 +19,9 @@ const registerUser = async (req, res) => {
         message: error.details[0].message,
       });
     }
-    const { username, name, email, password } = req.body;
+    const { username, name, email, password, bio } = req.body;
 
+    //checking is user already exists or not
     let user = await User.findOne({ $or: [{ email }, { username }] });
     if (user) {
       logger.warn("User already exists");
@@ -76,21 +77,20 @@ const loginUser = async (req, res) => {
     // identifier === email || username
     const user = await User.findOne({
       $or: [{ email: identifier }, { username: identifier }],
-    });
+    }).select("+password");
 
     if (!user) {
       logger.warn("User not found!");
-      return re.status(400).json({
+      return res.status(400).json({
         success: false,
         message: "Invalid credentials",
       });
     }
 
-    //if user is present -> validate password or not?
     const isValidPassword = await user.comparePassword(password);
     if (!isValidPassword) {
       logger.warn("Incorrect Password");
-      return re.status(400).json({
+      return res.status(400).json({
         success: false,
         message: "Invalid Password",
       });
@@ -199,7 +199,7 @@ const logoutUser = async (req, res) => {
         message: "Invalid refresh token",
       });
     }
-    logger.info("Refresh token deleted for logour");
+    logger.info("Refresh token deleted for logout");
 
     res.json({
       success: true,

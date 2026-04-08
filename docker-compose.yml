@@ -1,4 +1,5 @@
 
+
 services:
   api-gateway:
     build: ./api-gateway
@@ -11,6 +12,9 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
       - RABBITMQ_URL=amqp://rabbitmq:5672
+    volumes:
+      - ./api-gateway:/usr/src/app
+    command: npm run dev
 
   identity-service:
     build: ./identity-service
@@ -23,6 +27,9 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
       - RABBITMQ_URL=amqp://rabbitmq:5672
+    volumes:
+      - ./identity-service:/usr/src/app
+    command: npm run dev
 
   post-service:
     build: ./post-service
@@ -35,6 +42,9 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
       - RABBITMQ_URL=amqp://rabbitmq:5672
+    volumes:
+      - ./post-service:/usr/src/app
+    command: npm run dev
 
   media-service:
     build: ./media-service
@@ -47,6 +57,9 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
       - RABBITMQ_URL=amqp://rabbitmq:5672
+    volumes:
+      - ./media-service:/usr/src/app
+    command: npm run dev
 
   search-service:
     build: ./search-service
@@ -59,6 +72,22 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
       - RABBITMQ_URL=amqp://rabbitmq:5672
+    volumes:
+      - ./search-service:/usr/src/app
+    command: npm run dev
+
+  notification-service:
+    build: ./notification-service
+    ports:
+      - "3005:3005"
+    env_file: ./notification-service/.env
+    depends_on:
+      - rabbitmq
+    environment:
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+    volumes:
+      - ./notification-service:/usr/src/app
+    command: npm run dev
 
   redis:
     image: redis:alpine
@@ -71,9 +100,7 @@ services:
       - "5672:5672"
       - "15672:15672"
     healthcheck:
-      test: [ "CMD", "rabbitmq-diagnostics", "-q", "ping" ]
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
       interval: 30s
       timeout: 10s
       retries: 5
-
-      

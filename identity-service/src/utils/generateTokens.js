@@ -14,7 +14,7 @@ const generateTokens = async (user) => {
   );
 
   // Generate refresh token
-  const refreshToken = crypto.randomBytes(40).toString("hex");
+  const refreshToken = crypto.randomBytes(40).toString("hex"); //random string
 
   // Set expiration date for refresh token (15 days)
   const expiredAt = new Date();
@@ -22,7 +22,7 @@ const generateTokens = async (user) => {
 
   // Save refresh token in DB
   await RefreshToken.create({
-    token: refreshToken,  // ✅ Corrected
+    token: refreshToken,  //  Corrected
     user: user._id,
     expiredAt,
   });

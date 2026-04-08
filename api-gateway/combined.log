@@ -488,3 +488,796 @@
 {"level":"info","message":"Received GET request to /v1/search/posts?query=random","service":"identity-service","timestamp":"2025-10-14T05:08:24.493Z"}
 {"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-14T05:08:24.494Z"}
 {"level":"info","message":"Response received from Search service: 200","service":"identity-service","timestamp":"2025-10-14T05:08:26.897Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T06:33:10.504Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T06:33:10.512Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T06:33:10.513Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T06:33:10.515Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T06:33:10.517Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T06:33:10.519Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T11:47:06.676Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T11:47:06.700Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T11:47:06.708Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T11:47:06.712Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T11:47:06.714Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T11:47:06.715Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:00:20.895Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:00:20.905Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:00:20.906Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:00:20.908Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:00:20.909Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:00:20.912Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:07:08.713Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:07:08.715Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-18T12:07:08.764Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:07:24.154Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:07:24.156Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-18T12:07:24.168Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:08:18.595Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:08:18.604Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:08:18.605Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:08:18.606Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:08:18.607Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:08:18.609Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:08:28.264Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:08:28.266Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2025-10-18T12:08:28.306Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:09:23.563Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:09:23.564Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2025-10-18T12:09:23.575Z"}
+{"level":"info","message":"Received POST request to /v1/api/register","service":"identity-service","timestamp":"2025-10-18T12:09:56.109Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:09:56.110Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:11:42.781Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:11:42.793Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:11:42.794Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:11:42.796Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:11:42.797Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:11:42.800Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:11:43.633Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:11:43.635Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:11:43.674Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:12:13.588Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:12:13.590Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:12:13.601Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:12:15.378Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:12:15.379Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:12:15.384Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:13:32.846Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:13:32.846Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:13:32.852Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:13:35.362Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:13:35.366Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:13:35.377Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:14:15.918Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:14:15.932Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:14:15.934Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:14:15.937Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:14:15.938Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:14:15.940Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:14:33.445Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:14:33.448Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-18T12:14:33.483Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:23:09.564Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:23:09.580Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:23:09.582Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:23:09.584Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:23:09.585Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:23:09.587Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:28:38.736Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:28:38.740Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:28:38.741Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:28:38.742Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:28:38.742Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:28:38.743Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:29:07.654Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:29:07.655Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:29:07.686Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:30:07.261Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:30:07.264Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:30:07.275Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:30:57.458Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:30:57.459Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:30:57.468Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:31:24.689Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:31:24.690Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:31:24.694Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:31:26.458Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:31:26.459Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:31:26.463Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:31:28.275Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:31:28.275Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:31:28.279Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-18T12:34:22.244Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-18T12:34:22.246Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-18T12:34:22.253Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:44:49.791Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:44:49.795Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:44:49.796Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:44:49.797Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:44:49.797Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:44:49.798Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-18T12:47:29.364Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-18T12:47:29.371Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-18T12:47:29.371Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-18T12:47:29.372Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-18T12:47:29.373Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-18T12:47:29.374Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-19T13:33:55.341Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-19T13:33:55.345Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-19T13:33:55.345Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-19T13:33:55.346Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-19T13:33:55.347Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-19T13:33:55.347Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-19T13:53:18.868Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-19T13:53:18.873Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-19T13:53:18.874Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-19T13:53:18.874Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-19T13:53:18.875Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-19T13:53:18.877Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T10:58:33.958Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T10:58:33.967Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T10:58:33.968Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T10:58:33.969Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T10:58:33.970Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T10:58:33.970Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T10:59:01.329Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T10:59:01.330Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T10:59:01.352Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:12:32.670Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:12:32.676Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:12:32.676Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:12:32.677Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:12:32.677Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:12:32.678Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:12:43.024Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:12:43.024Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2025-10-21T11:12:43.039Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:12:47.900Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:12:47.901Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2025-10-21T11:12:47.913Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:16:58.602Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:16:58.607Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:16:58.608Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:16:58.609Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:16:58.609Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:16:58.611Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:18:43.189Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:18:43.191Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:18:43.891Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:19:14.070Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:19:14.071Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:19:14.104Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:20:55.920Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:20:55.921Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:20:55.960Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:20:59.089Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:20:59.089Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:20:59.115Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:21:58.790Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:21:58.797Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:21:58.797Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:21:58.798Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:21:58.799Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:21:58.800Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:22:01.303Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:22:01.304Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:22:01.321Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:22:04.259Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:22:04.260Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:22:04.265Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:22:06.094Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:22:06.094Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:22:06.099Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:22:08.087Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:22:08.088Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:22:08.096Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:22:10.361Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:22:10.362Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:22:10.368Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:22:12.554Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:22:12.554Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:22:12.558Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:22:14.668Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:22:14.668Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:22:15.046Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:24:55.134Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:24:55.140Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:24:55.140Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:24:55.141Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:24:55.143Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:24:55.144Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:24:57.342Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:24:57.343Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2025-10-21T11:24:57.365Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:25:01.687Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:25:01.688Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2025-10-21T11:25:01.696Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:25:16.008Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:25:16.009Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:25:16.554Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:27:06.172Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:27:06.176Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:27:06.177Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:27:06.178Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:27:06.179Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:27:06.181Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:27:18.784Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:27:18.785Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:27:18.806Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:27:21.009Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:27:21.010Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-21T11:27:21.015Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:27:30.198Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:27:30.199Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-10-21T11:27:31.584Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:28:29.078Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:28:29.079Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:28:29.132Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:28:37.411Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:28:37.412Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:28:37.440Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:28:50.984Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:28:50.985Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:28:51.026Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:29:04.865Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:29:04.866Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:29:04.992Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:29:20.725Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:29:20.725Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:29:20.803Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:29:29.229Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:29:29.230Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-21T11:29:29.255Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:29:43.564Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:29:43.564Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:29:43.691Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:32:49.032Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:32:49.037Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:32:49.038Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:32:49.039Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:32:49.039Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:32:49.040Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:33:04.435Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:33:04.435Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T11:33:04.452Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:33:08.631Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:33:08.632Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:33:09.325Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:33:11.560Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:33:11.561Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:33:11.651Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:39:09.506Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:39:09.510Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:39:09.511Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:39:09.511Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:39:09.512Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:39:09.513Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:39:25.464Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:39:25.465Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.6:3001","service":"identity-service","timestamp":"2025-10-21T11:39:25.483Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:39:30.913Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:39:30.915Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-21T11:39:32.022Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-21T11:41:02.445Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:41:02.446Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-10-21T11:41:02.855Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T11:41:58.566Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:41:58.568Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:41:58.845Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T11:48:11.289Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:48:11.301Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T11:48:11.741Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:48:58.083Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:48:58.090Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:48:58.091Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:48:58.093Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:48:58.094Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:48:58.095Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T11:49:49.099Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:49:49.100Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-21T11:49:50.084Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:51:55.069Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:51:55.071Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T11:51:55.114Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:52:38.391Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:52:38.393Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T11:52:38.422Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:52:40.956Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:52:40.957Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T11:52:40.984Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:52:49.315Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:52:49.317Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-21T11:52:50.535Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:53:06.186Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:53:06.187Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T11:53:06.212Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f7714ecec06e669aad3415","service":"identity-service","timestamp":"2025-10-21T11:53:42.151Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:53:42.151Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T11:53:42.176Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:55:27.675Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:55:27.676Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T11:55:27.700Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T11:59:18.142Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T11:59:18.149Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T11:59:18.150Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T11:59:18.151Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T11:59:18.152Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T11:59:18.153Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:59:39.101Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:59:39.102Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-21T11:59:39.127Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:59:41.928Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:59:41.928Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-21T11:59:41.936Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T11:59:45.497Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T11:59:45.498Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T11:59:46.106Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-21T11:59:53.673Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T11:59:53.674Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-21T11:59:54.285Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T12:00:08.413Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T12:00:08.414Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-21T12:00:08.530Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f7714ecec06e669aad3415","service":"identity-service","timestamp":"2025-10-21T12:00:45.370Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T12:00:45.371Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-21T12:00:45.466Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f76e223a6b991b9f718595","service":"identity-service","timestamp":"2025-10-21T12:01:13.442Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-21T12:01:13.442Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-21T12:01:13.527Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-21T12:04:38.102Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-21T12:04:38.111Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-21T12:04:38.112Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-21T12:04:38.113Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-21T12:04:38.114Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-21T12:04:38.115Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:04:42.721Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:04:42.722Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T12:04:42.744Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:04:45.336Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:04:45.337Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T12:04:45.349Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:04:47.845Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:04:47.846Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T12:04:47.854Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:04:54.318Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:04:54.319Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T12:04:54.325Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:04:57.201Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:04:57.202Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T12:04:57.209Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:04:59.282Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:04:59.283Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-21T12:04:59.287Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:05:09.403Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:05:09.403Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-21T12:05:10.049Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-21T12:05:36.817Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-21T12:05:36.818Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-21T12:05:36.894Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-22T05:30:56.010Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-22T05:30:56.020Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-22T05:30:56.021Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-22T05:30:56.022Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-22T05:30:56.022Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-22T05:30:56.024Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-22T05:31:57.086Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:31:57.088Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-10-22T05:31:59.155Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:32:30.549Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:32:30.551Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:32:30.980Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-22T05:33:12.259Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:33:12.259Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-22T05:33:12.297Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-22T05:33:23.012Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:33:23.013Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-22T05:33:23.044Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-22T05:40:12.734Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-22T05:40:12.751Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-22T05:40:12.752Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-22T05:40:12.755Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-22T05:40:12.757Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-22T05:40:12.758Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:19.216Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:19.217Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:19.261Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:22.061Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:22.063Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:22.077Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:24.753Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:24.754Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:24.770Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:27.213Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:27.214Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:27.221Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:30.025Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:30.026Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:30.033Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:32.563Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:32.564Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:32.569Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:35.941Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:35.942Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:35.951Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:38.858Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:38.859Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:38.871Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:41.550Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:41.551Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T05:40:41.558Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:40:46.861Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:40:46.862Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:40:48.008Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-22T05:41:07.094Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:41:07.095Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-22T05:41:07.139Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-22T05:41:09.385Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:41:09.386Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-22T05:41:09.428Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-22T05:44:11.017Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-22T05:44:11.030Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-22T05:44:11.031Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-22T05:44:11.031Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-22T05:44:11.032Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-22T05:44:11.033Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:44:12.964Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:12.966Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-22T05:44:13.011Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:44:16.502Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:16.504Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-22T05:44:16.523Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:44:19.834Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:19.836Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-22T05:44:19.845Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:44:22.483Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:22.484Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-22T05:44:22.491Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:44:25.842Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:25.844Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-22T05:44:25.850Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:44:31.425Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:31.426Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.8:3001","service":"identity-service","timestamp":"2025-10-22T05:44:31.435Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:44:35.767Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:35.767Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:44:36.981Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-22T05:44:58.637Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:44:58.638Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:44:59.044Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364","service":"identity-service","timestamp":"2025-10-22T05:45:52.345Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T05:45:52.346Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:45:52.453Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T05:46:18.915Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:46:18.915Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:46:19.225Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-22T05:47:09.190Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T05:47:09.191Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:47:09.581Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364","service":"identity-service","timestamp":"2025-10-22T05:47:17.024Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T05:47:17.024Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T05:47:17.108Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-22T05:50:48.760Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-22T05:50:48.768Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-22T05:50:48.769Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-22T05:50:48.770Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-22T05:50:48.772Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-22T05:50:48.773Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-22T06:09:16.386Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-22T06:09:16.392Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T06:09:17.694Z"}
+{"level":"info","message":"Received GET request to /v1/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:09:41.283Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:09:41.286Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:10:00.608Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:10:00.608Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T06:10:00.829Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-22T06:11:41.622Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-22T06:11:41.628Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-22T06:11:41.629Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-22T06:11:41.632Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-22T06:11:41.633Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-22T06:11:41.636Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:11:48.932Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:11:48.933Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T06:11:48.950Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:11:54.755Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:11:54.758Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.7:3001","service":"identity-service","timestamp":"2025-10-22T06:11:54.766Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:12:01.703Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:12:01.704Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-22T06:12:02.413Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:12:56.553Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:12:56.554Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-22T06:12:56.652Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:12:58.612Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:12:58.612Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-22T06:12:58.713Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-22T06:13:51.350Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-22T06:13:51.355Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-22T06:13:51.356Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-22T06:13:51.356Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-22T06:13:51.357Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-22T06:13:51.357Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-22T06:14:41.804Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-22T06:14:41.805Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-22T06:14:42.616Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T05:23:20.707Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T05:23:20.714Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T05:23:20.715Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T05:23:20.716Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T05:23:20.717Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T05:23:20.718Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T05:26:47.304Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T05:26:47.308Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T05:26:47.309Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T05:26:47.310Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T05:26:47.311Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T05:26:47.311Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T05:35:24.527Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T05:35:24.535Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T05:35:24.536Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T05:35:24.537Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T05:35:24.538Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T05:35:24.539Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-23T05:38:57.197Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:38:57.199Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-23T05:38:57.245Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-23T05:39:22.315Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:39:22.317Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-23T05:39:22.327Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T05:42:38.473Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T05:42:38.476Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T05:42:38.476Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T05:42:38.477Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T05:42:38.477Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T05:42:38.478Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T05:45:05.027Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T05:45:05.032Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T05:45:05.034Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T05:45:05.036Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T05:45:05.037Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T05:45:05.038Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T05:46:49.192Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T05:46:49.196Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T05:46:49.197Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T05:46:49.198Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T05:46:49.199Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T05:46:49.200Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-10-23T05:49:06.173Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:49:06.174Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-10-23T05:49:07.298Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-23T05:50:11.066Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:50:11.067Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-23T05:50:11.123Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-23T05:50:13.774Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:50:13.775Z"}
+{"level":"info","message":"Response received from Identity service: 400","service":"identity-service","timestamp":"2025-10-23T05:50:13.814Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-23T05:50:45.769Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:50:45.772Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T05:50:46.176Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T05:51:04.380Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:51:04.381Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-23T05:51:04.821Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T05:54:33.409Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:54:33.410Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-23T05:54:33.854Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T05:54:36.021Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:54:36.022Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2025-10-23T05:54:36.787Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T05:56:03.031Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T05:56:03.036Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T05:56:03.038Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T05:56:03.039Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T05:56:03.040Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T05:56:03.042Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T05:56:21.919Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:56:21.920Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-23T05:56:21.944Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T05:56:41.189Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T05:56:41.190Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T05:56:42.349Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T06:03:08.329Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T06:03:08.344Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T06:03:08.345Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T06:03:08.346Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T06:03:08.347Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T06:03:08.348Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T06:15:00.135Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T06:15:00.153Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T06:15:00.154Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T06:15:00.156Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T06:15:00.157Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T06:15:00.169Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-23T06:16:04.906Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:16:04.908Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:16:06.033Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T06:16:23.445Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:16:23.446Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:16:23.858Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T06:19:59.712Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T06:19:59.721Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T06:19:59.722Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T06:19:59.724Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T06:19:59.726Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T06:19:59.727Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T06:21:52.231Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:21:52.233Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:21:53.395Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T06:24:24.514Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T06:24:24.519Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T06:24:24.520Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T06:24:24.521Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T06:24:24.522Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T06:24:24.523Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T06:25:23.004Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:25:23.007Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:25:24.083Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T06:29:13.981Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T06:29:13.985Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T06:29:13.985Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T06:29:13.986Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T06:29:13.987Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T06:29:13.988Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T06:33:03.582Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:33:03.583Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-23T06:33:03.993Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-10-23T06:33:08.783Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:33:08.784Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:33:09.311Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T06:33:25.244Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:33:25.244Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:33:26.514Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T06:38:17.063Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:38:17.069Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:38:22.448Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-10-23T06:39:26.243Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-10-23T06:39:26.249Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-10-23T06:39:26.249Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-10-23T06:39:26.250Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-10-23T06:39:26.252Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-10-23T06:39:26.253Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-10-23T06:39:56.861Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-10-23T06:39:56.861Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:39:57.918Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364","service":"identity-service","timestamp":"2025-10-23T06:40:48.045Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-23T06:40:48.045Z"}
+{"level":"info","message":"Response received from Identity service: 401","service":"identity-service","timestamp":"2025-10-23T06:40:48.074Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364","service":"identity-service","timestamp":"2025-10-23T06:41:04.216Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-23T06:41:04.216Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:41:04.655Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-10-23T06:41:16.838Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-10-23T06:41:16.839Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-10-23T06:41:17.345Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2025-11-09T11:35:47.274Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2025-11-09T11:35:47.277Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2025-11-09T11:35:47.278Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2025-11-09T11:35:47.279Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2025-11-09T11:35:47.280Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2025-11-09T11:35:47.281Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2025-11-09T11:38:24.469Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:38:24.471Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2025-11-09T11:38:25.650Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2025-11-09T11:38:51.374Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:38:51.376Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-11-09T11:38:51.727Z"}
+{"level":"info","message":"Received POST request to /v1/media/upload","service":"identity-service","timestamp":"2025-11-09T11:41:21.674Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:41:21.675Z"}
+{"level":"info","message":"Response received from media service: 201","service":"identity-service","timestamp":"2025-11-09T11:41:26.681Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"identity-service","timestamp":"2025-11-09T11:42:02.393Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:42:02.395Z"}
+{"level":"warn","message":"Invalid token!","service":"identity-service","timestamp":"2025-11-09T11:42:02.408Z"}
+{"level":"info","message":"Received POST request to /v1/posts/create-post","service":"identity-service","timestamp":"2025-11-09T11:42:32.324Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:42:32.325Z"}
+{"level":"info","message":"Response received from Post service: 201","service":"identity-service","timestamp":"2025-11-09T11:42:33.647Z"}
+{"level":"info","message":"Received GET request to /v1/posts/69107e29c17916f9b4d96ac4","service":"identity-service","timestamp":"2025-11-09T11:43:24.517Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:43:24.520Z"}
+{"level":"info","message":"Response received from Post service: 200","service":"identity-service","timestamp":"2025-11-09T11:43:24.709Z"}
+{"level":"info","message":"Received GET request to /v1/posts/all-posts","service":"identity-service","timestamp":"2025-11-09T11:43:43.422Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:43:43.423Z"}
+{"level":"info","message":"Response received from Post service: 200","service":"identity-service","timestamp":"2025-11-09T11:43:43.659Z"}
+{"level":"info","message":"Received GET request to /v1/media/get","service":"identity-service","timestamp":"2025-11-09T11:44:13.715Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:44:13.715Z"}
+{"level":"info","message":"Response received from media service: 200","service":"identity-service","timestamp":"2025-11-09T11:44:13.853Z"}
+{"level":"info","message":"Received GET request to /v1/search/posts?query=rude","service":"identity-service","timestamp":"2025-11-09T11:45:27.582Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:45:27.583Z"}
+{"level":"warn","message":"Invalid token!","service":"identity-service","timestamp":"2025-11-09T11:45:27.585Z"}
+{"level":"info","message":"Received GET request to /v1/search/posts?query=rude","service":"identity-service","timestamp":"2025-11-09T11:45:53.023Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:45:53.024Z"}
+{"level":"info","message":"Response received from Search service: 200","service":"identity-service","timestamp":"2025-11-09T11:45:54.103Z"}
+{"level":"info","message":"Received GET request to /v1/search/posts?query=Jude","service":"identity-service","timestamp":"2025-11-09T11:46:05.017Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:46:05.017Z"}
+{"level":"info","message":"Response received from Search service: 200","service":"identity-service","timestamp":"2025-11-09T11:46:05.119Z"}
+{"level":"info","message":"Received POST request to /v1/users/follow","service":"identity-service","timestamp":"2025-11-09T11:46:28.014Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-11-09T11:46:28.014Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-11-09T11:46:28.790Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364","service":"identity-service","timestamp":"2025-11-09T11:46:39.141Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:46:39.141Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-11-09T11:46:39.229Z"}
+{"level":"info","message":"Received GET request to /v1/users/68f86c4e78847ecb9fda1364/connections","service":"identity-service","timestamp":"2025-11-09T11:47:35.745Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2025-11-09T11:47:35.745Z"}
+{"level":"info","message":"Response received from Identity service: 200","service":"identity-service","timestamp":"2025-11-09T11:47:36.002Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T02:30:03.151Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T02:30:03.156Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T02:30:03.158Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T02:30:03.160Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T02:30:03.161Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T02:30:03.162Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-03-11T02:37:28.763Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-03-11T02:37:28.778Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2026-03-11T02:37:40.467Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T02:50:39.183Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T02:50:39.188Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T02:50:39.188Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T02:50:39.190Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T02:50:39.191Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T02:50:39.192Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T02:55:16.780Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T02:55:16.799Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T02:55:16.800Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T02:55:16.802Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T02:55:16.805Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T02:55:16.809Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-03-11T03:09:12.463Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-03-11T03:09:12.489Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2026-03-11T03:09:24.714Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:12:39.166Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:12:39.184Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:12:39.185Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:12:39.187Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:12:39.188Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:12:39.193Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:21:58.564Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:21:58.572Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:21:58.573Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:21:58.574Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:21:58.575Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:21:58.577Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:24:21.052Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:24:21.059Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:24:21.060Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:24:21.061Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:24:21.062Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:24:21.063Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:30:43.654Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:30:43.663Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:30:43.664Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:30:43.666Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:30:43.666Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:30:43.668Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:37:45.261Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:37:45.268Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:37:45.269Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:37:45.270Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:37:45.273Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:37:45.274Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:38:45.475Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:38:45.484Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:38:45.485Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:38:45.486Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:38:45.487Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:38:45.488Z"}
+{"level":"info","message":"Received POST request to /v1/users/login","service":"identity-service","timestamp":"2026-03-11T03:39:09.764Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-03-11T03:39:09.764Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2026-03-11T03:39:20.209Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-03-11T03:40:35.791Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-03-11T03:40:35.804Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2026-03-11T03:40:46.077Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:43:49.896Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:43:49.901Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:43:49.902Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:43:49.903Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:43:49.903Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:43:49.905Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-03-11T03:43:51.371Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-03-11T03:43:51.372Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.9:3001","service":"identity-service","timestamp":"2026-03-11T03:43:51.400Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:48:42.017Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:48:42.023Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:48:42.023Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:48:42.024Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:48:42.025Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:48:42.026Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-03-11T03:51:12.909Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-03-11T03:51:12.916Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-03-11T03:51:12.917Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:51:12.920Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:51:12.923Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:51:12.924Z"}

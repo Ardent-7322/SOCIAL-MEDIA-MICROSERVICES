@@ -13,6 +13,22 @@ const validateToken = require("./middlewares/authMiddleware");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const requiredEnvVars = [
+  "REDIS_URL",
+  "IDENTITY_SERVICE_URL",
+  "POST_SERVICE_URL",
+  "MEDIA_SERVICE_URL",
+  "SEARCH_SERVICE_URL",
+];
+
+const missingEnvVars = requiredEnvVars.filter((name) => !process.env[name]);
+
+if (missingEnvVars.length > 0) {
+  throw new Error(
+    `Missing required environment variables: ${missingEnvVars.join(", ")}`,
+  );
+}
+
 const redisClient = new Redis(process.env.REDIS_URL);
 
 app.use(helmet());
@@ -57,7 +73,7 @@ const proxyOptions = {
 
 //setting up proxy for our identity service
 app.use(
-  "/v1/auth",
+  "/v1/users",
   proxy(process.env.IDENTITY_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
@@ -66,12 +82,12 @@ app.use(
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
-        `Response received from Identity service: ${proxyRes.statusCode}`
+        `Response received from Identity service: ${proxyRes.statusCode}`,
       );
 
       return proxyResData;
     },
-  })
+  }),
 );
 
 //setting up proxy for our post service
@@ -88,12 +104,12 @@ app.use(
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
-        `Response received from Post service: ${proxyRes.statusCode}`
+        `Response received from Post service: ${proxyRes.statusCode}`,
       );
 
       return proxyResData;
     },
-  })
+  }),
 );
 
 //setting up proxy for our media service
@@ -104,7 +120,9 @@ app.use(
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
       proxyReqOpts.headers["x-user-id"] = srcReq.user.userId;
-      if (!srcReq.headers["content-type"].startsWith("multipart/form-data")) {
+      const contentType = srcReq.headers["content-type"] || "";
+
+      if (!contentType.startsWith("multipart/form-data")) {
         proxyReqOpts.headers["Content-Type"] = "application/json";
       }
 
@@ -112,13 +130,13 @@ app.use(
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
-        `Response received from media service: ${proxyRes.statusCode}`
+        `Response received from media service: ${proxyRes.statusCode}`,
       );
 
       return proxyResData;
     },
     parseReqBody: false,
-  })
+  }),
 );
 
 //setting up proxy for our search service
@@ -135,28 +153,28 @@ app.use(
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
       logger.info(
-        `Response received from Search service: ${proxyRes.statusCode}`
+        `Response received from Search service: ${proxyRes.statusCode}`,
       );
 
       return proxyResData;
     },
-  })
+  }),
 );
 app.use(errorHandler);
 
 app.listen(PORT, "0.0.0.0", () => {
   logger.info(`API Gateway is running on port ${PORT}`);
   logger.info(
-    `Identity service is running on port ${process.env.IDENTITY_SERVICE_URL}`
+    `Identity service is running on port ${process.env.IDENTITY_SERVICE_URL}`,
   );
   logger.info(
-    `Post service is running on port ${process.env.POST_SERVICE_URL}`
+    `Post service is running on port ${process.env.POST_SERVICE_URL}`,
   );
   logger.info(
-    `Media service is running on port ${process.env.MEDIA_SERVICE_URL}`
+    `Media service is running on port ${process.env.MEDIA_SERVICE_URL}`,
   );
   logger.info(
-    `Search service is running on port ${process.env.SEARCH_SERVICE_URL}`
+    `Search service is running on port ${process.env.SEARCH_SERVICE_URL}`,
   );
   logger.info(`Redis Url ${process.env.REDIS_URL}`);
 });

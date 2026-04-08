@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true,
       trim: true,
-      minlenght: 3,
+      minlength: 3,
       index: true, // for search
     },
     name: {
@@ -30,8 +30,8 @@ const userSchema = new mongoose.Schema(
       select: false, //hides passwrod by default
     },
     bio: {
-      type: string,
-      maxlenght: 200,
+      type: String,
+      maxlength: 200,
       default: "",
     },
     createdAt: {
@@ -70,7 +70,7 @@ const userSchema = new mongoose.Schema(
 // hashing password
 
 userSchema.pre("save", async function (next) {
-  if (this.isModified("password")) {
+  if (this.isModified("password")) { // checks password is changed? only then hashing
     try {
       this.password = await argon2.hash(this.password);
     } catch (error) {
