@@ -61,10 +61,34 @@ Services communicate synchronously over REST for simplicity. Async events via Ra
 ```bash
 git clone https://github.com/Ardent-7322/SOCIAL-MEDIA-MICROSERVICES
 cd SOCIAL-MEDIA-MICROSERVICES
+cp api-gateway/.env.example api-gateway/.env
+cp identity-service/.env.example identity-service/.env
+cp post-service/.env.example post-service/.env
+cp media-service/.env.example media-service/.env
+cp search-service/.env.example search-service/.env
 docker-compose up --build
 ```
 
 API Gateway available at `http://localhost:3000`
+
+### Pre-run checklist
+
+- Ensure MongoDB is reachable from containers (default examples use `host.docker.internal`).
+- Set a strong `JWT_SECRET` in `api-gateway/.env` and `identity-service/.env`.
+- Set real Cloudinary credentials in `media-service/.env`.
+
+### Smoke checks after startup
+
+```bash
+# gateway boot check
+curl -i http://localhost:3000/
+
+# register a user through gateway -> identity-service
+curl -X POST http://localhost:3000/v1/auth/users/register \
+  -H "Content-Type: application/json" \
+  -d '{"username":"demo-user","email":"demo@example.com","password":"Password@123"}'
+```
+
 
 
 ## Known limitations
