@@ -1281,3 +1281,18 @@
 {"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-03-11T03:51:12.920Z"}
 {"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-03-11T03:51:12.923Z"}
 {"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-03-11T03:51:12.924Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"identity-service","timestamp":"2026-04-11T15:25:38.429Z"}
+{"level":"info","message":"Identity service is running on port http://identity-service:3001","service":"identity-service","timestamp":"2026-04-11T15:25:38.442Z"}
+{"level":"info","message":"Post service is running on port http://post-service:3002","service":"identity-service","timestamp":"2026-04-11T15:25:38.443Z"}
+{"level":"info","message":"Media service is running on port http://media-service:3003","service":"identity-service","timestamp":"2026-04-11T15:25:38.444Z"}
+{"level":"info","message":"Search service is running on port http://search-service:3004","service":"identity-service","timestamp":"2026-04-11T15:25:38.446Z"}
+{"level":"info","message":"Redis Url redis://redis:6379","service":"identity-service","timestamp":"2026-04-11T15:25:38.447Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-04-11T15:25:58.508Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-04-11T15:25:58.510Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2026-04-11T15:25:58.582Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-04-11T15:33:14.535Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-04-11T15:33:14.557Z"}
+{"level":"info","message":"Response received from Identity service: 500","service":"identity-service","timestamp":"2026-04-11T15:33:25.882Z"}
+{"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-04-11T15:34:27.336Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-04-11T15:34:27.339Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2026-04-11T15:34:30.162Z"}

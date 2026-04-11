@@ -71,3 +71,4 @@
 {"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-23T05:39:22.327Z"}
 {"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.5:3001","service":"identity-service","timestamp":"2025-10-23T05:56:21.944Z"}
 {"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.9:3001","service":"identity-service","timestamp":"2026-03-11T03:43:51.400Z"}
+{"level":"error","message":"Proxy error: connect ECONNREFUSED 172.18.0.4:3001","service":"identity-service","timestamp":"2026-04-11T15:25:58.582Z"}

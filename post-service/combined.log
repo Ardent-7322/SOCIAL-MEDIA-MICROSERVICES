@@ -602,3 +602,6 @@
 {"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-03-11T03:51:28.117Z"}
 {"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-03-11T03:51:28.125Z"}
 {"level":"info","message":"Connected to mongoDB","service":"identity-service","timestamp":"2026-03-11T03:51:28.620Z"}
+{"code":"ENOTFOUND","hostname":"_mongodb._tcp.cluster0.tbguzec.mongodb.net","level":"error","message":"Mongo connection error querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net","service":"identity-service","stack":"Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.tbguzec.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)","syscall":"querySrv","timestamp":"2026-04-11T15:26:08.596Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"identity-service","timestamp":"2026-04-11T15:26:08.699Z"}
+{"level":"info","message":"Post service running on port 3002","service":"identity-service","timestamp":"2026-04-11T15:26:08.705Z"}
