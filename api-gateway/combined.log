@@ -1296,3 +1296,5 @@
 {"level":"info","message":"Received POST request to /v1/users/register","service":"identity-service","timestamp":"2026-04-11T15:34:27.336Z"}
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2026-04-11T15:34:27.339Z"}
 {"level":"info","message":"Response received from Identity service: 201","service":"identity-service","timestamp":"2026-04-11T15:34:30.162Z"}
+{"level":"info","message":"Received GET request to /","service":"identity-service","timestamp":"2026-04-11T16:10:30.632Z"}
+{"level":"info","message":"Request body, undefined","service":"identity-service","timestamp":"2026-04-11T16:10:30.665Z"}
