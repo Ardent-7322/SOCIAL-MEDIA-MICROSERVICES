@@ -8,7 +8,7 @@ This is not a feature-complete social network. The focus was on getting the arch
 
 ## Architecture
 
-![architecture-diagram](./architecture-diagram/svgviewer-png-output.png)
+![architecture-diagram](./architecture-diagram/social_media_microservices_architecture.jpg)
 
 ---
 
